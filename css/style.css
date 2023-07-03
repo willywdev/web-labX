@@ -28,6 +28,8 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 0px 0px 15px 15px;
+  z-index: 5;
+  box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.3);
 }
 
 header a {
@@ -83,6 +85,7 @@ img {
 
 main {
   margin: 15px;
+  height: 1000px;
 }
 
 .question-card {
@@ -96,6 +99,11 @@ main {
   border-radius: 15px;
   gap: 2rem;
   margin-bottom: 1.5rem;
+  box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.3);
+}
+
+.question-card:first-child {
+  margin-top: 1.5rem;
 }
 
 .question-card img {
