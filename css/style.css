@@ -38,8 +38,7 @@ header {
   height: 75px;
   justify-content: center;
   align-items: center;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 0px 0px 15px 15px;
 }
 
 header a {
