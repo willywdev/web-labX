@@ -91,11 +91,15 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 0 15px 0;
+  padding: 35px 0 15px 0;
   border-radius: 15px;
   gap: 2rem;
   margin-bottom: 1.5rem;
   box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.3);
+}
+
+.question-card p {
+  text-align: center;
 }
 
 .question-card:first-child {
