@@ -106,7 +106,7 @@ main {
   margin-top: 1.5rem;
 }
 
-.question-card img {
+.question-card .bookmark-button {
   position: absolute;
   top: -15px;
   right: 15px;
@@ -142,6 +142,7 @@ button {
   padding: 10px;
   border-radius: 7px;
   background-color: #ffdede;
+  cursor: pointer;
 }
 
 button:hover {
