@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
@@ -257,4 +257,8 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+}
+
+.dark-mode {
+  background-color: black;
 }
