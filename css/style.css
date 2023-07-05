@@ -247,9 +247,9 @@ input:checked + .slider:before {
   align-items: center;
 }
 
-.profile img {
-  width: 25px;
-  margin-right: 1rem;
+.profile img:not(button img) {
+  width: 100px;
+  flex-shrink: 0;
 }
 
 .profile-button {
