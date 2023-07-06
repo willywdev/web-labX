@@ -18,7 +18,7 @@
   text-align: center;
   width: 85%;
 }
-.card__question:first-child {
+.card:first-child {
   margin-top: 1.5rem;
 }
 .card__list {
