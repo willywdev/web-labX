@@ -1,0 +1,88 @@
+.card {
+  position: relative;
+  background-color: #cbf3f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0 15px 0;
+  border-radius: 15px;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.3);
+}
+.card__margin-btm {
+  margin-bottom: 4rem;
+}
+.card__question {
+  text-align: center;
+  width: 85%;
+}
+.card__question:first-child {
+  margin-top: 1.5rem;
+}
+.card__list {
+  list-style-type: none;
+  align-self: flex-start;
+  margin-left: 15px;
+}
+.card__item {
+  float: left;
+  margin-right: 7px;
+  font-size: 0.75rem;
+  background-color: #2ec4b6;
+  padding: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.card__item:hover {
+  background-color: #ffbf69;
+}
+
+.card__item:active {
+  background-color: #ffbf69;
+}
+
+.card__bookmark-btn {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  margin: 0;
+}
+
+.card__bookmark-img {
+  width: 20px;
+}
+.card__profile-title {
+  text-align: start;
+  width: 85%;
+  margin-top: 0;
+}
+.card__profile {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 75%;
+  gap: 1rem;
+}
+
+.card__profile-img {
+  width: 100px;
+  flex-shrink: 0;
+}
+.card__profile-description {
+  width: 85%;
+}
+.card__profile-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.profile-card__settings {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  align-items: center;
+}
