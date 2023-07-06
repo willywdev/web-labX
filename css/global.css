@@ -23,11 +23,11 @@ main {
   margin: 15px;
 }
 button {
-  border: none;
-  padding: 10px;
-  border-radius: 7px;
   background-color: #ffbf69;
+  border-radius: 7px;
+  border: none;
   cursor: pointer;
+  padding: 10px;
 }
 
 button:hover {

@@ -1,19 +1,19 @@
 .navbar {
+  align-items: center;
   background-color: #2ec4b6;
-  position: fixed;
+  border-radius: 15px 15px 0 0;
   bottom: 0;
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
   height: 50px;
-  align-items: center;
-  border-radius: 15px 15px 0 0;
+  justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
 }
 .navbar__btn {
-  height: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
   width: 50px;
 }
 
@@ -29,11 +29,11 @@
   transform: scale(1.1);
 }
 .navbar__btn--active {
-  height: 100%;
-  background-color: #ffbf69;
-  display: flex;
-  width: 50px;
-  justify-content: center;
   align-items: center;
+  background-color: #ffbf69;
   border-radius: 25px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 50px;
 }
