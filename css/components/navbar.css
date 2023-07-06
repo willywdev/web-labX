@@ -1,6 +1,6 @@
 .navbar {
   align-items: center;
-  background-color: #2ec4b6;
+  background-color: var(--primary-color);
   border-radius: 15px 15px 0 0;
   bottom: 0;
   display: flex;
@@ -18,19 +18,19 @@
 }
 
 .navbar__btn:hover {
-  background-color: #cbf3f0;
+  background-color: var(--secondary-color);
   border-radius: 25px;
   transform: scale(1.1);
 }
 
 .navbar__btn:active {
-  background-color: #cbf3f0;
+  background-color: var(--secondary-color);
   border-radius: 25px;
   transform: scale(1.1);
 }
 .navbar__btn--active {
   align-items: center;
-  background-color: #ffbf69;
+  background-color: var(--accent-color-2);
   border-radius: 25px;
   display: flex;
   height: 100%;

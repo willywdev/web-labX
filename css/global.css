@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--bg-color);
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
@@ -23,7 +23,7 @@ main {
   margin: 15px;
 }
 button {
-  background-color: #ffbf69;
+  background-color: var(--accent-color-2);
   border-radius: 7px;
   border: none;
   cursor: pointer;
@@ -31,12 +31,9 @@ button {
 }
 
 button:hover {
-  background-color: #ff9f1c;
+  background-color: var(--accent-color);
 }
 
 button:active {
-  background-color: #ff9f1c;
-}
-.dark-mode {
-  background-color: black;
+  background-color: var(--accent-color);
 }
