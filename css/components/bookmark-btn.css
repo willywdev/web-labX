@@ -1,0 +1,10 @@
+.question-card .bookmark-button {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  margin: 0;
+}
+
+.bookmark-button img {
+  width: 20px;
+}

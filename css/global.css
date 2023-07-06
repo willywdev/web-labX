@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("montserrat-v25-latin-regular.woff2") format("woff2");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #2ec4b6;
+  display: flex;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 15px 15px;
+  z-index: 5;
+  box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.3);
+}
+
+header a {
+  all: unset;
+  cursor: pointer;
+}
+
+nav {
+  background-color: #2ec4b6;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  border-radius: 15px 15px 0 0;
+}
+
+img {
+  width: 36px;
+}
+
+main {
+  margin: 15px;
+}
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #ffbf69;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff9f1c;
+}
+
+button:active {
+  background-color: #ff9f1c;
+}
+.dark-mode {
+  background-color: black;
+}

@@ -1,0 +1,28 @@
+.footer-buttons {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+
+.footer-buttons:hover {
+  background-color: #cbf3f0;
+  border-radius: 25px;
+  transform: scale(1.1);
+}
+
+.footer-buttons:active {
+  background-color: #cbf3f0;
+  border-radius: 25px;
+  transform: scale(1.1);
+}
+.footer-btns--active {
+  height: 100%;
+  background-color: #ffbf69;
+  display: flex;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
