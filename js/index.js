@@ -1,10 +1,11 @@
-console.clear();
-const body = document.querySelector("body");
-const darkModeToggle = document.querySelector('[data-js="darkmode"]');
+import { darkModeToggle, root } from "./localStorage.js";
+
 darkModeToggle.addEventListener("click", () => {
   if (darkModeToggle.checked === true) {
-    body.classList.add("dark-mode");
+    root.style.setProperty("--bg-color", "#000");
+    localStorage.setItem("theme", "dark");
   } else {
-    body.classList.remove("dark-mode");
+    root.style.setProperty("--bg-color", "#fff");
+    localStorage.setItem("theme", "light");
   }
 });
