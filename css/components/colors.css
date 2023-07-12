@@ -1,7 +1,10 @@
 :root {
-  --bg-color: #fff;
-  --primary-color: #ff4a11;
-  --secondary-color: #abacae;
-  --accent-color: white;
-  --accent-color-2: #f37853;
+  --bg-color: #f5f5f4;
+  --primary-color: #ff8906;
+  --secondary-color: rgba(15, 14, 23, 75%);
+  --accent-color: #f24f4c;
+  --tertiary-color: #e53170;
+  --headline-color: #f5f5f4;
+  --paragraph-color: #f5f5f4;
+  --dark-bg-color: rgb(15, 14, 23);
 }

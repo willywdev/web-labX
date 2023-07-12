@@ -13,6 +13,7 @@
 body {
   background-color: var(--bg-color);
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: var(--paragraph-color);
 }
 
 img {
@@ -23,17 +24,22 @@ main {
   margin: 15px;
 }
 button {
-  background-color: var(--accent-color-2);
+  background-color: var(--primary-color);
   border-radius: 7px;
   border: none;
   cursor: pointer;
   padding: 10px;
+  color: var(--paragraph-color);
 }
 
 button:hover {
-  background-color: var(--accent-color);
+  background-color: var(--tertiary-color);
 }
 
 button:active {
-  background-color: var(--accent-color);
+  background-color: var(--tertiary-color);
+}
+
+h2 {
+  font-size: 1.1rem;
 }
