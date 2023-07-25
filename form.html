@@ -15,7 +15,36 @@
       </a>
     </header>
     <main>
-      <section class="card"></section>
+      <section class="card">
+        <form class="card__form">
+          <label for="user-question" class="card__label">Your question:</label>
+          <textarea
+            name="userQuestion"
+            id="user-question"
+            cols="30"
+            rows="5"
+            class="card__textarea"
+            placeholder="What does HTML stand for, and what is its primary purpose in web development?"></textarea>
+
+          <label for="user-answer" class="card__label">Your answer:</label>
+          <textarea
+            name="userAnswer"
+            id="user-answer"
+            cols="35"
+            rows="7"
+            class="card__textarea"
+            placeholder="HTML stands for HyperText Markup Language. Its primary purpose is to structure the content of a webpage, defining the various elements such as headings, paragraphs, images, links, and more."></textarea>
+
+          <label for="user-tags" class="card__label">Tag:</label>
+          <input
+            type="text"
+            name="userTags"
+            id="user-tags"
+            class="card__input"
+            placeholder="#html" />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
     <footer>
       <nav class="navbar">
@@ -29,7 +58,7 @@
           ><img src="assets/bookmark-line.svg" class="navbar__img"
         /></a>
         <a
-          href="create-form.html"
+          href="form.html"
           class="navbar__btn navbar__btn--active"
           aria-label="create a question and answer"
           ><img src="assets/PlusCircle_filled.svg" class="navbar__img"
