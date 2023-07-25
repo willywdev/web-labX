@@ -24,6 +24,7 @@ main {
   margin: 15px;
 }
 button {
+  transition: all 400ms ease;
   background-color: var(--primary-color);
   border-radius: 7px;
   border: none;
@@ -34,12 +35,19 @@ button {
 
 button:hover {
   background-color: var(--tertiary-color);
+  transform: scale(1.1);
+  transition: all 400ms ease;
 }
 
 button:active {
   background-color: var(--tertiary-color);
+  transform: scale(1.1);
+  transition: all 400ms ease;
 }
 
 h2 {
   font-size: 1.1rem;
+}
+.hidden {
+  display: none;
 }

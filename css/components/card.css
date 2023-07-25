@@ -55,7 +55,6 @@
   right: 15px;
   top: -15px;
 }
-
 .card__bookmark-img {
   width: 20px;
 }
@@ -91,4 +90,7 @@
   display: flex;
   justify-content: space-between;
   width: 85%;
+}
+.card__answer {
+  text-align: center;
 }

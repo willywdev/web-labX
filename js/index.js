@@ -1,11 +1,20 @@
-import { darkModeToggle, root } from "./localStorage.js";
+const bookmarkButton = document.querySelector('[data-js="bookmarkButton"]');
+const bookmarkImage = document.querySelector('[data-js="bookmarkImage"]');
+const answerButton = document.querySelector('[data-js="answerButton"]');
+const answerText = document.querySelector('[data-js="answerText"]');
 
-darkModeToggle.addEventListener("click", () => {
-  if (darkModeToggle.checked === true) {
-    root.style.setProperty("--bg-color", "#000");
-    localStorage.setItem("theme", "dark");
+bookmarkButton.addEventListener("click", () => {
+  if (bookmarkImage.src.includes("bookmark-fill.svg")) {
+    bookmarkImage.src = "../assets/bookmark-line.svg";
   } else {
-    root.style.setProperty("--bg-color", "#fff");
-    localStorage.setItem("theme", "light");
+    bookmarkImage.src = "../assets/bookmark-fill.svg";
   }
+});
+answerButton.addEventListener("click", () => {
+  if (answerButton.textContent.includes("Show")) {
+    answerButton.textContent = "Hide Answer";
+  } else if (answerButton.textContent.includes("Hide")) {
+    answerButton.textContent = "Show Answer";
+  }
+  answerText.classList.toggle("hidden");
 });
