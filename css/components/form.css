@@ -8,13 +8,14 @@
 .form__label {
   align-self: flex-start;
   font-weight: 600;
+  color: var(--paragraph-color);
 }
 .form__user-input {
   border-radius: 5px;
   border: none;
   width: 100%;
-  caret-color: var(--primary-color);
   padding: 5px;
+  outline: 1px solid black;
 }
 .form__user-input:focus {
   outline: none;
@@ -27,4 +28,9 @@
   height: 1.4rem;
   padding-left: 5px;
   margin-bottom: 1rem;
+  outline: 1px solid black;
+}
+.form__tag-input:focus {
+  outline: none;
+  outline: 3px solid var(--primary-color);
 }
