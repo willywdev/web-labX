@@ -30,6 +30,8 @@
   align-self: flex-start;
   list-style-type: none;
   margin-left: 15px;
+  color: var(--secondary-color);
+  font-weight: 600;
 }
 .card__item {
   background-color: var(--primary-color);
