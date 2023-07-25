@@ -42,11 +42,11 @@
 }
 
 .card__item:hover {
-  background-color: var(--accent-color-2);
+  background-color: var(--tertiary-color);
 }
 
 .card__item:active {
-  background-color: var(--accent-color-2);
+  background-color: var(--tertiary-color);
 }
 
 .card__bookmark-btn {
