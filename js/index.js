@@ -5,9 +5,9 @@ const answerText = document.querySelector('[data-js="answerText"]');
 
 bookmarkButton.addEventListener("click", () => {
   if (bookmarkImage.src.includes("bookmark-fill.svg")) {
-    bookmarkImage.src = "/assets/bookmark-line.svg";
+    bookmarkImage.src = "assets/bookmark-line.svg";
   } else {
-    bookmarkImage.src = "/assets/bookmark-fill.svg";
+    bookmarkImage.src = "assets/bookmark-fill.svg";
   }
 });
 answerButton.addEventListener("click", () => {
