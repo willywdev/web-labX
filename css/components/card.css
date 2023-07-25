@@ -85,7 +85,7 @@
   display: flex;
   font-size: 1rem;
   justify-content: center;
-  color: var(--paragraph-color);
+  color: black;
 }
 .profile-card__settings {
   align-items: center;
