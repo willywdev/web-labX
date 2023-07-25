@@ -1,11 +1,6 @@
-import { darkModeToggle, root } from "./localStorage.js";
+const bookmarkButton = document.querySelector('[data-js="bookmarkButton"]');
+const bookmarkImage = document.querySelector('[data-js="bookmarkImage"]');
 
-darkModeToggle.addEventListener("click", () => {
-  if (darkModeToggle.checked === true) {
-    root.style.setProperty("--bg-color", "#000");
-    localStorage.setItem("theme", "dark");
-  } else {
-    root.style.setProperty("--bg-color", "#fff");
-    localStorage.setItem("theme", "light");
-  }
+bookmarkButton.addEventListener("click", () => {
+  console.log(bookmarkButton);
 });
