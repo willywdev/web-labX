@@ -50,17 +50,11 @@
 }
 
 .card__bookmark-btn {
-  transition: all 400ms ease;
   margin: 0;
   position: absolute;
   right: 15px;
   top: -15px;
 }
-.card__bookmark-btn:active {
-  transform: scale(1.1);
-  transition: all 400ms ease;
-}
-
 .card__bookmark-img {
   width: 20px;
 }
