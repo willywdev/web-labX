@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webdev Quiz App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="./js/index.js" defer></script>
+    <script type="module" src="./js/localStorage.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__link">
+        <h1>Webdev Quiz</h1>
+      </a>
+    </header>
+    <main>
+      <section class="card">
+        <form class="form">
+          <label for="user-question" class="form__label">Your question:</label>
+          <textarea
+            name="userQuestion"
+            id="user-question"
+            cols="30"
+            rows="5"
+            class="form__user-input"
+            placeholder="What does HTML stand for, and what is its primary purpose in web development?"></textarea>
+
+          <label for="user-answer" class="form__label">Your answer:</label>
+          <textarea
+            name="userAnswer"
+            id="user-answer"
+            cols="35"
+            rows="7"
+            class="form__user-input"
+            placeholder="HTML stands for HyperText Markup Language. Its primary purpose is to structure the content of a webpage, defining the various elements such as headings, paragraphs, images, links, and more."></textarea>
+
+          <label for="user-tags" class="form__label">Tag:</label>
+          <input
+            type="text"
+            name="userTags"
+            id="user-tags"
+            class="form__tag-input"
+            placeholder="#html" />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <nav class="navbar">
+        <a href="index.html" class="navbar__btn" aria-label="go to home"
+          ><img src="assets/home-2-line.svg" class="navbar__img"
+        /></a>
+        <a
+          href="bookmarks.html"
+          class="navbar__btn"
+          aria-label="go to bookmarks"
+          ><img src="assets/bookmark-line.svg" class="navbar__img"
+        /></a>
+        <a
+          href="form.html"
+          class="navbar__btn navbar__btn--active"
+          aria-label="create a question and answer"
+          ><img src="assets/PlusCircle_filled.svg" class="navbar__img"
+        /></a>
+        <a href="profile.html" class="navbar__btn" aria-label="go to profile"
+          ><img src="assets/user-line.svg" class="navbar__img"
+        /></a>
+      </nav>
+    </footer>
+  </body>
+</html>
