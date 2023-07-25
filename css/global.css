@@ -52,3 +52,9 @@ h2 {
 .hidden {
   display: none;
 }
+input::placeholder {
+  opacity: 0.2;
+}
+textarea::placeholder {
+  opacity: 0.15;
+}
