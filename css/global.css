@@ -51,6 +51,7 @@ h2 {
 }
 .hidden {
   display: none;
+  transition: 200ms all ease-in-out;
 }
 input::placeholder {
   opacity: 0.2;

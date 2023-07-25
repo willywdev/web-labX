@@ -13,8 +13,16 @@ bookmarkButton.addEventListener("click", () => {
 answerButton.addEventListener("click", () => {
   if (answerButton.textContent.includes("Show")) {
     answerButton.textContent = "Hide Answer";
+    answerText.classList.add("text-focus-in");
   } else if (answerButton.textContent.includes("Hide")) {
     answerButton.textContent = "Show Answer";
+    answerText.classList.remove("text-focus-in");
   }
-  answerText.classList.toggle("hidden");
+  if (answerText.classList.contains("hidden")) {
+    answerText.classList.toggle("hidden");
+  } else {
+    setTimeout(() => {
+      answerText.classList.toggle("hidden");
+    }, 200);
+  }
 });
