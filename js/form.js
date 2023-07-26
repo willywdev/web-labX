@@ -1,13 +1,30 @@
 const form = document.querySelector('[data-js="form"]');
 const main = document.querySelector('[data-js="main"]');
+const characterCountQuestion = document.querySelector(
+  '[data-js="charactersLeftQuestion"]'
+);
+const characterCountAnswer = document.querySelector(
+  '[data-js="charactersLeftAnswer"]'
+);
+const textAreas = [form[0], form[1]];
+characterCountAnswer.textContent = `100 of 100 Characters left`;
+
+textAreas.forEach((input) => {
+  updateCharacterCount(input);
+  input.addEventListener("input", () => {
+    updateCharacterCount(input);
+  });
+});
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const formData = new FormData(e.target);
   const data = Object.fromEntries(formData);
-  console.log(data);
+  console.log(form);
   createQuestionCard(data.userQuestion, data.userAnswer, data.userTags);
   form.reset();
+  updateCharacterCount(form[0]);
+  updateCharacterCount(form[1]);
 });
 
 function createQuestionCard(question, answer, tags) {
@@ -77,4 +94,14 @@ function createQuestionCard(question, answer, tags) {
     }
   });
   tagsList.scrollIntoView();
+}
+
+function updateCharacterCount(input) {
+  if (input.name === "userQuestion") {
+    const charactersLeftQuestion = input.maxLength - input.value.length;
+    characterCountQuestion.textContent = `${charactersLeftQuestion} of ${input.maxLength} characters left`;
+  } else if (input.name === "userAnswer") {
+    const charactersLeftAnswer = input.maxLength - input.value.length;
+    characterCountAnswer.textContent = `${charactersLeftAnswer} of ${input.maxLength} characters left`;
+  }
 }

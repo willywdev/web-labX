@@ -34,3 +34,10 @@
   outline: none;
   outline: 3px solid var(--primary-color);
 }
+.form__characters-left {
+  color: #ff8b06;
+  align-self: flex-end;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-right: 5px;
+}

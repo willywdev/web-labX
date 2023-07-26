@@ -24,7 +24,10 @@
             id="user-question"
             cols="30"
             rows="5"
+            maxlength="30"
+            data-js="user-input"
             class="form__user-input"></textarea>
+          <p class="form__characters-left" data-js="charactersLeftQuestion"></p>
 
           <label for="user-answer" class="form__label">Your answer:</label>
           <textarea
@@ -32,7 +35,10 @@
             id="user-answer"
             cols="35"
             rows="7"
+            maxlength="100"
+            data-js="user-input"
             class="form__user-input"></textarea>
+          <p class="form__characters-left" data-js="charactersLeftAnswer"></p>
 
           <label for="user-tags" class="form__label">Tag:</label>
           <input
