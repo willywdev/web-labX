@@ -17,10 +17,7 @@
     <main>
       <section class="card">
         <button class="card__bookmark-btn" data-js="bookmarkButton">
-          <img
-            class="card__bookmark-img"
-            src="assets/bookmark-line.svg"
-            data-js="bookmarkImage" />
+          <img class="card__bookmark-img" src="assets/bookmark-line.svg" />
         </button>
         <h2 class="card__question">
           What does HTML stand for, and what is its primary purpose in web
@@ -40,12 +37,18 @@
           <li class="card__item">#css</li>
         </ul>
       </section>
-      <section class="card hidden">
-        <button class="card__bookmark-btn">
-          <img class="card__bookmark-img" src="assets/bookmark-fill.svg" />
+      <section class="card">
+        <button class="card__bookmark-btn" data-js="bookmarkButton">
+          <img class="card__bookmark-img" src="assets/bookmark-line.svg" />
         </button>
-        <h2 class="card__question">Lorem ipsum dolor sit?</h2>
+        <h2 class="card__question">What is CSS used for in web development?</h2>
         <button class="card__answer-btn">Show Answer</button>
+        <p class="card__answer hidden" data-js="answerText">
+          CSS stands for Cascading Style Sheets. It is used to control the
+          presentation and layout of HTML elements on a webpage. With CSS, you
+          can apply styles like colors, fonts, spacing, and positioning to make
+          your web pages visually appealing.
+        </p>
         <ul class="card__list">
           <li class="card__item">#html</li>
           <li class="card__item">#flexbox</li>
