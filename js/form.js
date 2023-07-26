@@ -46,5 +46,35 @@ function createQuestionCard(question, answer, tags) {
   section.append(answerText);
   section.append(tagsList);
   bookmarkButton.append(bookmarkImage);
-  tagsList.append(tags);
+  tagsList.append(tag1);
+
+  // Give section a margin
+  main.style.marginBottom = "3.5rem";
+
+  // Give the Buttons the same Functionality as in index.html
+  bookmarkButton.addEventListener("click", () => {
+    if (bookmarkImage.src.includes("bookmark-fill.svg")) {
+      bookmarkImage.src = "assets/bookmark-line.svg";
+    } else {
+      bookmarkImage.src = "assets/bookmark-fill.svg";
+    }
+  });
+  showAnswerButton.addEventListener("click", () => {
+    if (showAnswerButton.textContent.includes("Show")) {
+      showAnswerButton.textContent = "Hide Answer";
+      showAnswerButton.nextElementSibling.classList.add("text-focus-in");
+    } else if (showAnswerButton.textContent.includes("Hide")) {
+      showAnswerButton.textContent = "Show Answer";
+      showAnswerButton.nextElementSibling.classList.remove("text-focus-in");
+    }
+    if (showAnswerButton.nextElementSibling.classList.contains("hidden")) {
+      showAnswerButton.nextElementSibling.classList.toggle("hidden");
+      answerText.scrollIntoView();
+    } else {
+      setTimeout(() => {
+        showAnswerButton.nextElementSibling.classList.toggle("hidden");
+      }, 200);
+    }
+  });
+  tagsList.scrollIntoView();
 }
