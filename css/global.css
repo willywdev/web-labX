@@ -53,9 +53,6 @@ h2 {
   display: none;
   transition: 200ms all ease-in-out;
 }
-input::placeholder {
-  opacity: 0.2;
-}
-textarea::placeholder {
-  opacity: 0.15;
+textarea {
+  margin-bottom: 10px;
 }
