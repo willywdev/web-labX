@@ -1,6 +1,6 @@
 # [🚀 View Live Demo](https://willywdev.github.io/webdev-quiz/)
 
-![](https://img.shields.io/badge/maintenance%20status-actively%20developed-brightgreen)
+![Project is actively developed](https://img.shields.io/badge/maintenance%20status-actively%20developed-brightgreen)
 
 ## New features are added regularly
 
