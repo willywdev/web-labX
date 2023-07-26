@@ -6,9 +6,8 @@ const characterCountQuestion = document.querySelector(
 const characterCountAnswer = document.querySelector(
   '[data-js="charactersLeftAnswer"]'
 );
-const textAreas = [form[0], form[1]];
-characterCountAnswer.textContent = `100 of 100 Characters left`;
 
+// Updating TextAreas for User Input (Question & Answer) for every change
 textAreas.forEach((input) => {
   updateCharacterCount(input);
   input.addEventListener("input", () => {
@@ -16,6 +15,7 @@ textAreas.forEach((input) => {
   });
 });
 
+// Form Submit Event. Fires when Submit Button is pressed
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const formData = new FormData(e.target);
@@ -27,6 +27,7 @@ form.addEventListener("submit", (e) => {
   updateCharacterCount(form[1]);
 });
 
+// Create a new Question Card from the User Input (Question, Answer & Tags)
 function createQuestionCard(question, answer, tags) {
   // Creating DOM Elements
   const section = document.createElement("section");
@@ -96,6 +97,7 @@ function createQuestionCard(question, answer, tags) {
   tagsList.scrollIntoView();
 }
 
+// Function to update the Character Count.
 function updateCharacterCount(input) {
   if (input.name === "userQuestion") {
     const charactersLeftQuestion = input.maxLength - input.value.length;
