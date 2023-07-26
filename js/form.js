@@ -6,6 +6,7 @@ const characterCountQuestion = document.querySelector(
 const characterCountAnswer = document.querySelector(
   '[data-js="charactersLeftAnswer"]'
 );
+const textAreas = [form[0], form[1]];
 
 // Updating TextAreas for User Input (Question & Answer) for every change
 textAreas.forEach((input) => {
@@ -20,7 +21,6 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const formData = new FormData(e.target);
   const data = Object.fromEntries(formData);
-  console.log(form);
   createQuestionCard(data.userQuestion, data.userAnswer, data.userTags);
   form.reset();
   updateCharacterCount(form[0]);

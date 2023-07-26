@@ -13,7 +13,6 @@ bookmarkButton.forEach((button) => {
 });
 answerButton.forEach((button) => {
   button.addEventListener("click", () => {
-    console.log(button.nextElementSibling);
     if (button.textContent.includes("Show")) {
       button.textContent = "Hide Answer";
       button.nextElementSibling.classList.add("text-focus-in");
