@@ -17,9 +17,9 @@ textAreas.forEach((input) => {
 });
 
 // Form Submit Event. Fires when Submit Button is pressed
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (event) => {
   e.preventDefault();
-  const formData = new FormData(e.target);
+  const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
   createQuestionCard(data.userQuestion, data.userAnswer, data.userTags);
   form.reset();
