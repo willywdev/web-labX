@@ -1,21 +1,75 @@
-# [🚀 View Live Demo](https://willywdev.github.io/webdev-quiz/)
+# Nuxt 3 Minimal Starter
 
-![Project is actively developed](https://img.shields.io/badge/maintenance%20status-actively%20developed-brightgreen)
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## New features are added regularly
+## Setup
 
-Make sure to clean your cache & cookies if you encounter any problems with the App.
+Make sure to install the dependencies:
 
-**Windows: Chrome, Firefox or Edge**
+```bash
+# npm
+npm install
 
-- Press `CTRL` + `F5` or
-- Try `SHIFT` + `F5` or
-- Try `CTRL` + `SHIFT` + `R`
+# pnpm
+pnpm install
 
-**Mac: Chrome or Firefox**
+# yarn
+yarn install
 
-- Press `SHIFT` + `⌘` + `R`
+# bun
+bun install
+```
 
-**Every other Browser not listed:**
+## Development Server
 
-- Clean Cache & Cookies manually in the History Tab of your browser.
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
