@@ -10,8 +10,15 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@formkit/auto-animate": "latest",
+    "@nuxt/image": "latest",
+    "@nuxt/ui": "latest",
+    "@pinia/nuxt": "latest",
     "nuxt": "^3.9.0",
     "vue": "^3.4.3",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "mariadb": "^3.2.3"
   }
 }
