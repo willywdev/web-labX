@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.1",
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "geist": "^1.2.0",
     "lucide-react": "^0.304.0",
     "mariadb": "^3.2.3",
+    "million": "latest",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",

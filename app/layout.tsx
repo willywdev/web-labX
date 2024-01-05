@@ -1,22 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
 import "./global.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Webdev Quiz",
   description: "Test your skills in web development",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en' className='dark:bg-neutral-950'>
-      <body className={inter.className}>{children}</body>
+    <html lang='en' className='w-full h-full'>
+      <body className={GeistSans.className}>{children}</body>
     </html>
   );
 }
+
+export default RootLayout;
